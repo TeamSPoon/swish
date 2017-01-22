@@ -1,8 +1,10 @@
 // list of examples, represented as a JSON list
 
-[
-{ "file":"rdf_examples.swinb",		"title":"RDF queries" },
-{ "file":"swish_tutorials.swinb",	"title":"SWISH tutorials" },
+[ 
+  { "file":"examples.swinb",	     "title":"Example programs" },
+  { "file":"prolog_tutorials.swinb", "title":"Prolog tutorials" },
+  { "file":"rdf_examples.swinb",		"title":"RDF queries" },
+  { "file":"swish_tutorials.swinb",  "title":"SWISH tutorials" },
   "--",
-{ "file":"stats.swinb",			"title":"Usage statistics" }
+  { "file":"stats.swinb",	     "title":"Usage statistics" }
 ]

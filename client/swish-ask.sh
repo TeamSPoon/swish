@@ -10,7 +10,7 @@
 server=${SWISH_SERVER-http://localhost:3020}
 srctext=
 curlarg=
-format=${SWISH_FORMAT-rdf}
+format=${SWISH_FORMAT-prolog}
 program=$(basename $0)
 
 usage()

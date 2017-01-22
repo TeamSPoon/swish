@@ -1,0 +1,249 @@
+/* Style for the SWISH notebook
+*/
+
+.notebook
+{ position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nb-toolbar, .nb-content
+{ width: 100%;
+}
+
+.notebook.hamburger .nb-toolbar {
+  display: none;
+}
+
+.nb-toolbar
+{ position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.nb-toolbar .action-fullscreen
+{ right: 5px;
+  position: absolute;
+}
+
+div.notebook-menu {
+ display: none;
+}
+
+.notebook.hamburger div.notebook-menu {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 1em;
+  z-index: 2000;
+}
+
+.notebook.hamburger .nb-view {
+  top: 0px;
+  height: 100%;
+}
+
+.nb-view
+{ position: absolute;
+  top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  overflow-y: auto;
+}
+
+.nb-content
+{ position: relative;
+  width: 100%;
+}
+
+.nb-bottom
+{ width: 100%;
+  height: 30%;
+}
+
+.dropdown.cell-type
+{ display: inline;
+}
+
+.nb-cell.markdown:not(.runnable)
+{ background-color: transparent;
+  border: 0px;
+}
+
+.nb-cell.html:not(.runnable)
+{ background-color: transparent;
+  border: 0px;
+}
+
+.nb-cell
+{ margin-left: 20px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.nb-cell:focus
+{ outline: 0px;
+}
+
+.nb-type-select
+{ padding: 1em 0px 1em 0px;
+}
+
+.nb-type-select > label
+{ margin-left: 1em;
+  margin-right: 1em;
+  position: relative;
+  top: 0.1em;
+}
+
+.nb-type-more
+{ padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.nb-type-more label
+{ margin-right: 1em;
+  position: relative;
+  top: 0.1em;
+}
+
+.nb-type-more input
+{ display: inline;
+}
+
+.nb-cell .close-select
+{ font-size: 150%;
+  padding: 0px 5px;
+  border: 0px;
+  color: #888;
+  background-color: transparent;
+  float: right;
+}
+
+.nb-cell.active
+{ margin-left: 8px;
+  border-left: 7px solid green !important;
+  padding-left: 5px;
+}
+
+.nb-cell.markdown.active > div.editor
+{ border: 1px dotted #888;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 52px;
+}
+
+.nb-cell.singleline div.editor
+{ height: 2em;
+}
+
+.nb-cell.singleline .CodeMirror-hscrollbar
+{ height: 0px;
+}
+
+.nb-cell .CodeMirror-scroll
+{ max-height: 40em;
+}
+
+.nb-cell .CodeMirror
+{ border-radius: 5px;
+}
+
+.nb-cell .nb-cell-buttons
+{ display: inline-block;
+  float: right;
+}
+
+.nb-cell span.glyphicon-cloud
+{ color: black;
+}
+
+.nb-cell.background span.glyphicon-cloud
+{ color: white;
+}
+
+.nb-cell > .with-buttons
+{ background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 50px);
+}
+
+.nb-cell .nb-query-menu
+{ display: inline;
+  float: left;
+}
+
+.nb-query-menu button
+{ background: transparent;
+  padding: 3px 5px 0px 5px;
+  border: 0px;
+  color: #888;
+}
+
+
+.nb-query-menu button:hover
+{ color: #000;
+}
+
+.nb-cell .prolog-prompt
+{ float: left;
+  padding-right: 0.3em;
+  padding-top: 0.25em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.nb-cell .editor.query
+{ margin-left: 44px;		/* CodeMirror gutter width */
+}
+
+.nb-cell.program, .nb-cell.query
+{ margin-bottom: 1em;
+}
+
+.nb-cell.not-for-query
+{ opacity: 0.5;
+}
+
+.nb-placeholder
+{ opacity: 0.5;
+}
+
+/* Notebook markdown */
+
+.nb-cell.markdown pre.code    { width: 90%; margin: auto; margin-bottom: 1em;}
+.nb-cell.markdown dl.termlist { margin-left: 5%; }
+.nb-cell.markdown dl.termlist dd { margin-left: 2em; }
+
+/* Embedded documentation */
+
+.nb-cell.markdown .predicates dt
+{
+}
+
+.nb-cell.markdown .predicates dd
+{ margin-left: 2em;
+  margin-bottom: 1ex;
+}
+
+a.btn-image
+{ padding: 1px 2px;
+}
+
+.nb-cell.program span.image-icon
+{ display: inline-block;
+  width: 18px;
+  height: 16px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  background-image: url("../icons/local.png");
+}
+
+.nb-cell.program.background span.image-icon
+{ background-image: url("../icons/global.png");
+}
